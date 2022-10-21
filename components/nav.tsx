@@ -9,7 +9,7 @@ export default function Nav() {
                 <div className="container flex flex-wrap justify-between ">
                     <a href="https://flowbite.com/" className="flex items-center">
                         <i className="fa-sharp fa-solid fa-hand-wave mr-3"><MdWavingHand className='fill-lime-500' /></i>
-                        <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">{HeaderName.headerName}</span>
+                        <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">My {HeaderName.headerName}</span>
                     </a>
                     <div className="flex items-center">
                         <button type="button" className="text-white bg-gray-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact sales</button>
