@@ -3,9 +3,7 @@ import Nav from './nav'
 type LayoutProps = {
     children: React.ReactNode,
 };
-import { useRouter } from 'next/router';
 export default function Layout({ children }: LayoutProps) {
-    // console.log(useRouter);
     return (
         <div className="flex flex-col">
             {/* */}
@@ -14,10 +12,10 @@ export default function Layout({ children }: LayoutProps) {
                     <Sidebar />
                 </aside>
                 <div>
-                    <header className="bg-white px-2 sm:px-4  mb-10 py-2.5 dark:bg-gray-900 fixed  w-full z-50 border-b border-gray-200 dark:border-gray-600">
+                    <header className="bg-white px-2 sm:px-4  mb-10 py-2.5 dark:bg-gray-900 fixed  z-50 border-b border-gray-200 dark:border-gray-600" style={{width:'95%'}}>
                         <Nav />
                     </header>
-                    <main className="p-10 mt-12">{children}</main>
+                    <main className="p-10 mt-20">{children}</main>
                 </div>
             </div>
         </div>
