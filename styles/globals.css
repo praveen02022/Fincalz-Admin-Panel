@@ -1,6 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 html,
 
 body {
@@ -9,7 +13,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+} 
 a {
   color: inherit;
   text-decoration: none;
