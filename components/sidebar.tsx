@@ -41,7 +41,6 @@ export default function Sidebar() {
                     </div>
                  
                     {menuItems.map((items: any) =>
-                      
                         <div onClick={() => setHeaderName(items.name)} draggable onDragStart={(e)=>dragStarted(e,items.id)}        className='border-b border-gray-200 dark:border-gray-600' key={items.id}>
                             <Link href={items.href} >
                                 <div className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -49,10 +48,8 @@ export default function Sidebar() {
                                 </div>
                             </Link>
                             <p className='text-sm mb-4 text-gray-400'>{items.name}</p>
-                        </div>
-                          
-                        )}
-                       
+                        </div>     
+                        )}        
                 </div>
             </div>
         </div>
